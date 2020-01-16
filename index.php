@@ -47,8 +47,8 @@ if (isset($_POST["cari"])) {
             <th>No.</th>
             <th>Aksi</th>
             <th>Gambar</th>
-            <th>NPM</th>
             <th>Nama</th>
+            <th>NPM</th>
             <th>Email</th>
             <th>Jurusan</th>
         </tr>
@@ -62,8 +62,8 @@ if (isset($_POST["cari"])) {
                     <a href="hapus.php?id=<?= $mhs["id"]; ?>" onclick="return confirm('Yakin?');">Hapus</a>
                 </td>
                 <td><img src="img/<?= $mhs["gambar"]; ?>" width="50"></td>
-                <td><?= $mhs["npm"]; ?></td>
                 <td><?= $mhs["nama"]; ?></td>
+                <td><?= $mhs["npm"]; ?></td>
                 <td><?= $mhs["email"]; ?></td>
                 <td><?= $mhs["jurusan"]; ?></td>
             </tr>

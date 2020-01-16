@@ -37,18 +37,18 @@ if (isset($_POST["submit"])) {
         <h1>Tambah Data Mahasiswa</h1>
     </header>
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <table border="2" cellpadding="10" cellspacing="2">
-            <tr>
-                <td>
-                    <label for="npm">NPM :</label>
-                    <br><input type="text" name="npm" id="npm" required>
-                </td>
-            </tr>
             <tr>
                 <td>
                     <label for="nama">Nama :</label>
                     <br><input type="text" name="nama" id="nama" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="npm">Npm :</label>
+                    <br><input type="text" name="npm" id="npm" required>
                 </td>
             </tr>
             <tr>

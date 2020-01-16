@@ -41,19 +41,20 @@ if (isset($_POST["submit"])) {
         <h1>Edit Data Mahasiswa</h1>
     </header>
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <table border="2" cellpadding="10" cellspacing="2">
             <input type="hidden" name="id" value="<?= $mhsw["id"]; ?>">
-            <tr>
-                <td>
-                    <label for="npm">NPM :</label>
-                    <br><input type="text" name="npm" id="npm" required value="<?= $mhsw["npm"]; ?>">
-                </td>
-            </tr>
+            <input type="hidden" name="gambarLama" value="<?= $mhsw["gambar"]; ?>">
             <tr>
                 <td>
                     <label for="nama">Nama :</label>
                     <br><input type="text" name="nama" id="nama" required value="<?= $mhsw["nama"]; ?>">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="npm">NPM :</label>
+                    <br><input type="text" name="npm" id="npm" required value="<?= $mhsw["npm"]; ?>">
                 </td>
             </tr>
             <tr>
@@ -65,13 +66,14 @@ if (isset($_POST["submit"])) {
             <tr>
                 <td>
                     <label for="jurusan">Jurusan :</label>
-                    <br><input type="text" name="jurusan" id="jurusan" required value="<?= $mhsw["npm"]; ?>">
+                    <br><input type="text" name="jurusan" id="jurusan" required value="<?= $mhsw["jurusan"]; ?>">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="gambar">Gambar : </label><br>
-                    <br><input type="text" name="gambar" id="gambar">
+                    <img src="img/<?= $mhws['gambar']; ?>" width="40"><br>
+                    <br><input type="file" name="gambar" id="gambar">
                 </td>
             </tr>
             <tr>
